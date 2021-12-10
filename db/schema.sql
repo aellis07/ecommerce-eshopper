@@ -19,3 +19,8 @@ CREATE TABLE product(
     REFERENCES category(id)
     ON DELETE SET NULL
 );
+
+CREATE TABLE tag(
+    id INT NOT NULL PRIMARY KEY,
+    tag_name VARCHAR(10)
+);
