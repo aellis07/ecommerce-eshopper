@@ -7,18 +7,22 @@ router.get("/", (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll().then((categoryData) => {
+    Category.hasMany(Product);
+    Product.belongsTo(Category);
     res.json(categoryData);
   });
-  Category.hasMany(Product);
 });
 
 router.get("/:id", (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
-  Category.findOne({ where: { id: req.params.id } }).then((categoryData) => {
+  Category.findbyPk({ where: { id: req.params.id } }).then((categoryData) => {
+    Category.hasMany(Product, {
+      foreignKey: "category_id",
+    });
+    Product.belongsTo(Category);
     res.json(categoryData);
   });
-  Category.hasMany(Product, { where: { id: req.params.category_id } });
 });
 
 router.post("/", (req, res) => {
