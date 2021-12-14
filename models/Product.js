@@ -11,14 +11,14 @@ Product.init(
   {
     // define columns
     id: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     productName: { type: DataTypes.STRING, allowNull: false },
     price: { type: DataTypes.DECIMAL(8, 4), allowNull: false },
-    stock: { type: DataTypes.INTERGER, allowNull: false, default: 10 },
+    stock: { type: DataTypes.INTEGER, allowNull: false, default: 10 },
     categoryID: {
       type: DataTypes.INTEGER,
       references: {
