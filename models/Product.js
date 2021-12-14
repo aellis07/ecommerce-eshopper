@@ -16,7 +16,7 @@ Product.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    productName: { type: DataTypes.STRING, allowNull: false },
+    productName: { type: DataTypes.STRING },
     price: { type: DataTypes.DECIMAL(8, 4), allowNull: false },
     stock: { type: DataTypes.INTEGER, allowNull: false, default: 10 },
     categoryID: {
