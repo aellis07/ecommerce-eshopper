@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
-  Tag.findbyPk({ where: { id: req.params.id } }).then((tagData) => {
+  Tag.findByPk(req.params.id).then((tagData) => {
     Tag.belongsToMany(Product, { through: ProductTag });
     ProductTag.belongsTo(Product, { foreignKey: "product_id" });
 
@@ -59,12 +59,14 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   // delete on tag by its `id` value
+
   Tag.destroy({
     where: {
       id: req.params.id,
     },
   })
     .then((deletedTag) => {
+      console.log(deletedTag);
       res.json(deletedTag);
     })
     .catch((err) => res.json(err));
