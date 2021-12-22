@@ -24,6 +24,8 @@ Download this repository. In the root of this repository open a terminal and run
 2. Next: `npm run seed`
 3. Last: `npm start` or `npm run watch`.
 
+https://drive.google.com/file/d/1pr-qhAN9sNy69_5LJRrA0Jj0Ov16bc-o/view
+
 ## Usage
 
 Test the backend routes of different categories, products and tags
