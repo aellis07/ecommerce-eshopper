@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   // create a new tag
   Tag.create({
-    tagName: req.body.tagName,
+    tag_name: req.body.tag_name,
   })
     .then((newTagName) => {
       // Send the newly created row as a JSON object
@@ -41,7 +41,7 @@ router.put("/:id", (req, res) => {
   Tag.update(
     {
       // All the fields you can update and the data attached to the request body.
-      tagName: req.body.tagName,
+      tag_name: req.body.tag_name,
     },
     {
       // Gets the books based on the isbn given in the request parameters
