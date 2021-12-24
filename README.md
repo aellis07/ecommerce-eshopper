@@ -24,7 +24,7 @@ Download this repository. In the root of this repository open a terminal and run
 2. Next: `npm run seed`
 3. Last: `npm start` or `npm run watch`.
 
-https://drive.google.com/file/d/1pr-qhAN9sNy69_5LJRrA0Jj0Ov16bc-o/view
+https://drive.google.com/file/d/1Oa2EVEajKqgPuNNRXlESU4tSCVoS7eD-/view
 
 ## Usage
 
