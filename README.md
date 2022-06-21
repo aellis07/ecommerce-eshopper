@@ -12,7 +12,7 @@ This project is licensed by: MIT.
 
 - [Installation](#installation)
 - [Video Demonstration](#video-demonstration)
-- [Technology](#technology)
+- [Technologies](#technologies)
 - [Contact](#contact)
 
 ## Installation
@@ -27,7 +27,7 @@ Download this repository. In the root (main folder) of this repository open a te
 
 https://drive.google.com/file/d/1Oa2EVEajKqgPuNNRXlESU4tSCVoS7eD-/view
 
-## Technology
+## Technologies
 
 - express.js
 - MySQL2
