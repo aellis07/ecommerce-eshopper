@@ -1,42 +1,38 @@
-# **Ecommerce E-Shopper**
+# **E-Shopper**
 
 ## Description
 
-The purpose of this repository is to begin building the backend of a e-commerce site using technologies such as sequilze and express to create and update different models that would represent an online store, then sending that data over a server to and from a database.
+E-Shopper is a server-side project focused on building up the back-end of a e-commerece site. The models used in the project were built using MySQL and Sequlize. Express.js, was used to test making client-side requests through HTTP Request methods.
 
 ## License
 
-This project is licensed by: Unlicense.
+This project is licensed by: MIT.
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Testing](#testing)
-- [Questions](#questions)
+- [Video Demonstration](#video-demonstration)
+- [Technology](#technology)
+- [Contact](#contact)
 
 ## Installation
 
-Download this repository. In the root of this repository open a terminal and run the following commands:
+Download this repository. In the root (main folder) of this repository open a terminal and run the following commands:
 
 1. First: `npm i`
 2. Next: `npm run seed`
 3. Last: `npm start` or `npm run watch`.
 
+### Video Demonstration
+
 https://drive.google.com/file/d/1Oa2EVEajKqgPuNNRXlESU4tSCVoS7eD-/view
 
-## Usage
+## Technology
 
-Test the backend routes of different categories, products and tags
-
-## Contributing
-
-Commit changes!
-
-## Testing
-
-N/a
+- express.js
+- MySQL2
+- Sequelize
+- dotenv
 
 ## Contact
 
